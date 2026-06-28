@@ -120,6 +120,7 @@
 									width={photo.width}
 									height={photo.height}
 									loading="lazy"
+									style="view-transition-name: photo-{photo.id};"
 									class="block h-auto w-full transition-transform duration-[0.6s] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-[1.03]"
 								/>
 								<!-- Hover overlay -->

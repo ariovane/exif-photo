@@ -226,6 +226,7 @@
 				width={photo.width}
 				height={photo.height}
 				draggable="false"
+				style="view-transition-name: photo-{photo.id};"
 				class="max-h-[calc(100dvh-12rem)] max-w-full object-contain lg:max-h-[calc(100dvh-14rem)]"
 			/>
 		</div>
