@@ -35,14 +35,20 @@ importers:
         specifier: ^1.6.22
         version: 1.6.22(@prisma/client@5.22.0)(@sveltejs/kit@2.66.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.3)(vite@8.0.16(@types/node@24.13.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.22.4)))(svelte@5.56.3)(typescript@6.0.3)(vite@8.0.16(@types/node@24.13.2)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.22.4)))(better-sqlite3@12.10.1)(drizzle-kit@0.31.10)(drizzle-orm@0.45.2(@cloudflare/workers-types@4.20260615.1)(@prisma/client@5.22.0)(@types/pg@8.20.0)(better-sqlite3@12.10.1)(kysely@0.28.17)(pg@8.21.0))(pg@8.21.0)(svelte@5.56.3)
       cnfast:
-        specifier: ^0.0.6
-        version: 0.0.6
+        specifier: ^0.0.8
+        version: 0.0.8
       drizzle-kit:
         specifier: ^0.31.10
         version: 0.31.10
       drizzle-orm:
         specifier: ^0.45.2
         version: 0.45.2(@cloudflare/workers-types@4.20260615.1)(@prisma/client@5.22.0)(@types/pg@8.20.0)(better-sqlite3@12.10.1)(kysely@0.28.17)(pg@8.21.0)
+      exifreader:
+        specifier: ^4.41.0
+        version: 4.41.0
+      nanoid:
+        specifier: ^5.1.16
+        version: 5.1.16
       oxfmt:
         specifier: ^0.55.0
         version: 0.55.0(svelte@5.56.3)
@@ -2243,6 +2249,13 @@ packages:
         integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==
       }
 
+  '@xmldom/xmldom@0.9.10':
+    resolution:
+      {
+        integrity: sha512-A9gOqLdi6cV4ibazAjcQufGj0B1y/vDqYrcuP6d/6x8P27gRS8643Dj9o1dEKtB6O7fwxb2FgBmJS2mX7gpvdw==
+      }
+    engines: { node: '>=14.6' }
+
   '@zag-js/accordion@1.41.2':
     resolution:
       {
@@ -2998,10 +3011,10 @@ packages:
       }
     engines: { node: '>=6' }
 
-  cnfast@0.0.6:
+  cnfast@0.0.8:
     resolution:
       {
-        integrity: sha512-DM6Bp9MPE+LF8NRDt9TUA4ONgZXzQDrA6lsojn66LLKTXvZbBsuu9Q8Wu8y9zE9sMCVF82zxAvNMObDBVSyKCg==
+        integrity: sha512-EjXKMfGfdwtV4AcNSQ6AwQaVzpC1B7IxeiwA3FlhTXz+YFlMKVi4c1JX9tgD2QOlahQXjB8KUXrBaYG+3v871Q==
       }
     hasBin: true
 
@@ -3405,6 +3418,13 @@ packages:
       '@typescript-eslint/types':
         optional: true
 
+  exifreader@4.41.0:
+    resolution:
+      {
+        integrity: sha512-P3nPeh6GWs5D5RZdRZ6q/LorHPmmeDgKsowduqRabtTFiqMD2bc5eTN+Dhq00O9BCuV2eksu3oOJh4ZaZvkK0A==
+      }
+    hasBin: true
+
   expand-template@2.0.3:
     resolution:
       {
@@ -3779,6 +3799,14 @@ packages:
         integrity: sha512-U9kYi5bpVMEI31yC8iw4bJJp0avcHXA0W8/wNfLfnvJYzihQo2ZRPYPvpAAd570HAcCBjCTN7vnr+v4StKl1IQ==
       }
     engines: { node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1 }
+    hasBin: true
+
+  nanoid@5.1.16:
+    resolution:
+      {
+        integrity: sha512-kVrnsrJqMR8+oLJnGEmSWw9BivK5mt7H3FZatVRjrc5wGqFYuBxX1yG7+A7Gi5AefkX6t/oCkizcQgpu0cY1dQ==
+      }
+    engines: { node: ^18 || >=20 }
     hasBin: true
 
   nanostores@1.3.0:
@@ -5711,6 +5739,9 @@ snapshots:
 
   '@types/trusted-types@2.0.7': {}
 
+  '@xmldom/xmldom@0.9.10':
+    optional: true
+
   '@zag-js/accordion@1.41.2':
     dependencies:
       '@zag-js/anatomy': 1.41.2
@@ -6431,7 +6462,7 @@ snapshots:
 
   clsx@2.1.1: {}
 
-  cnfast@0.0.6: {}
+  cnfast@0.0.8: {}
 
   commander@12.1.0: {}
 
@@ -6607,6 +6638,10 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
 
+  exifreader@4.41.0:
+    optionalDependencies:
+      '@xmldom/xmldom': 0.9.10
+
   expand-template@2.0.3: {}
 
   exsolve@1.0.8: {}
@@ -6760,6 +6795,8 @@ snapshots:
   ms@2.1.3: {}
 
   nanoid@3.3.14: {}
+
+  nanoid@5.1.16: {}
 
   nanostores@1.3.0: {}
 
