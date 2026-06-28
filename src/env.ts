@@ -13,5 +13,9 @@ export const variables = defineEnvVars({
 	},
 	BETTER_AUTH_SECRET: {
 		schema: v.string()
+	},
+	ORIGIN: {
+		schema: v.optional(v.string()),
+		public: true
 	}
 });
